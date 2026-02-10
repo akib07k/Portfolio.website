@@ -45,7 +45,7 @@
         }
         nav ul li a{
             text-decoration: none;
-            color: white;
+            color:white;
         }
         nav ul li a:hover{
             color: rgb(153, 153green, 226blue);
@@ -75,6 +75,10 @@
             font-size: 3.5rem;
         }
 
+        .leftSection .btn{
+           padding: 12px;
+        }
+
         .rightSection{
             width: 40%;
             display: flex;
@@ -87,6 +91,9 @@
             border: 3px solid rgb(170,170,255);     
         }
         .purple{
+            color:rgb(170, 170, 228) ;
+        }
+        #element{
             color:rgb(170, 170, 228) ;
         }
     </style>
@@ -112,14 +119,25 @@
     <section class="firstSection">
         <div class="leftSection">
             Hi, my name is <div><span class="purple">Akib Khan</span></div>
-            and I am a <div><span style="color: rgb(170,170,255);">Web Developer.</span></div>
+            and I am a 
+             <div><span id="element"></span></div>
         </div>
+        <button class="btn">Download Resume</button>
+        <button class="btn">Visit Github</button>
 
         <div class="rightSection">
              <img src="ME.png" alt="Akib khan">
         </div>
     </section>
 </main>
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['Aspiring Full Stack Developer', 'MERN Stack Enthausiast','AI&Tech Explorer','Creative Problem Solver','Always Learning'
+      ],
+      typeSpeed: 100,
+    });
+  </script>
 
 </body>
 </html>
